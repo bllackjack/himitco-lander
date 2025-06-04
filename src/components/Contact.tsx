@@ -119,19 +119,19 @@ const Contact: React.FC = () => {
     {
       icon: Mail,
       title: 'Email',
-      content: 'hello@himitco.com',
+      content: 'himitco.online@gmail.com',
       description: 'Send us an email anytime!'
     },
     {
       icon: Phone,
       title: 'Phone',
-      content: '+1 (555) 123-4567',
+      content: '+91 9780676707',
       description: 'Mon-Fri from 8am to 5pm'
     },
     {
       icon: MapPin,
       title: 'Office',
-      content: 'San Francisco, CA',
+      content: ' Chandigarh, India',
       description: 'Come say hello at our HQ'
     }
   ];
@@ -158,7 +158,7 @@ const Contact: React.FC = () => {
             <div className="w-24 h-1 bg-gradient-to-r from-neon-cyan to-neon-purple mx-auto mb-8"></div>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               Ready to transform your digital presence? Let's discuss your project 
-              and discover how HIMITCO can bring your vision to life.
+              and discover how can bring your vision to life.
             </p>
           </div>
 

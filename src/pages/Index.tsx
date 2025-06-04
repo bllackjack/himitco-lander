@@ -7,7 +7,6 @@ import Services from '../components/Services';
 import Portfolio from '../components/Portfolio';
 import Testimonials from '../components/Testimonials';
 import Contact from '../components/Contact';
-import Chat from '../components/Chat';
 const Index: React.FC = () => {
   return (
     <Layout
@@ -15,7 +14,6 @@ const Index: React.FC = () => {
       description="HIMITCO specializes in cutting-edge web development, mobile apps, and AI platforms. Transform your business with our innovative technology solutions. Get started today!"
     >
       <Hero />
-      <Chat />
       <About />
       <Services />
       <Portfolio />
