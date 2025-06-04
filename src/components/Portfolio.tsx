@@ -42,40 +42,35 @@ const Portfolio: React.FC = () => {
 
   const projects = [
     {
+      title: 'AI Analytics Dashboard',
+      category: 'AI Integration',
+      description: 'Intelligent analytics platform that processes large datasets and provides actionable insights through machine learning algorithms.',
+      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop',
+      technologies: ['Python', 'TensorFlow', 'React', 'D3.js'],
+      featured: true
+    },
+    {
       title: 'E-Commerce Platform',
       category: 'Web Development',
       description: 'A modern e-commerce platform built with Next.js, featuring real-time inventory, AI-powered recommendations, and seamless payment integration.',
       image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop',
       technologies: ['Next.js', 'TypeScript', 'Stripe', 'AI/ML'],
-      featured: true
+      
     },
     {
       title: 'Healthcare Mobile App',
       category: 'App Development',
       description: 'Cross-platform mobile application for healthcare providers with telemedicine features, appointment scheduling, and patient management.',
-      image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=600&h=400&fit=crop',
+      image: 'https://plus.unsplash.com/premium_photo-1699387204388-120141c76d51?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZGlnaXRhbCUyMGhlYWx0aGNhcmV8ZW58MHx8MHx8fDA%3D?w=600&h=400&fit=crop',
       technologies: ['React Native', 'Node.js', 'WebRTC', 'Firebase']
     },
-    {
-      title: 'AI Analytics Dashboard',
-      category: 'AI Integration',
-      description: 'Intelligent analytics platform that processes large datasets and provides actionable insights through machine learning algorithms.',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop',
-      technologies: ['Python', 'TensorFlow', 'React', 'D3.js']
-    },
+   
     {
       title: 'FinTech Web App',
       category: 'Web Development',
       description: 'Secure financial technology platform with real-time trading, portfolio management, and advanced security features.',
       image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&h=400&fit=crop',
       technologies: ['React', 'Node.js', 'PostgreSQL', 'WebSocket']
-    },
-    {
-      title: 'Smart IoT Platform',
-      category: 'AI Integration',
-      description: 'IoT management platform with AI-driven automation, real-time monitoring, and predictive maintenance capabilities.',
-      image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop',
-      technologies: ['Vue.js', 'Python', 'MQTT', 'TensorFlow']
     },
     {
       title: 'Social Media App',

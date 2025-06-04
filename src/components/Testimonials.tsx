@@ -44,7 +44,7 @@ const Testimonials: React.FC = () => {
       name: 'Sarah Chen',
       role: 'CEO, TechFlow Solutions',
       company: 'TechFlow Solutions',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face',
+      image: 'https://plus.unsplash.com/premium_photo-1689977968861-9c91dbb16049?w=150&h=150&fit=crop&crop=face',
       content: 'HIMITCO transformed our digital presence completely. Their web development team delivered a stunning, high-performance platform that exceeded our expectations. The attention to detail and technical expertise is outstanding.',
       rating: 5,
       project: 'E-Commerce Platform'

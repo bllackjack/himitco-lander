@@ -42,6 +42,13 @@ const Services: React.FC = () => {
 
   const services = [
     {
+      icon: Brain,
+      title: 'AI Integration',
+      description: 'Intelligent solutions powered by machine learning and AI to automate processes and enhance decision-making.',
+      features: ['Machine Learning', 'Data Analytics', 'Automation', 'Smart Insights'],
+      color: 'neon-cyan'
+    },
+    {
       icon: Globe,
       title: 'Web Development',
       description: 'Custom websites and web applications built with cutting-edge technologies like React, Next.js, and modern frameworks.',
@@ -54,14 +61,8 @@ const Services: React.FC = () => {
       description: 'Native and cross-platform mobile applications that deliver exceptional user experiences across all devices.',
       features: ['iOS & Android', 'Cross-Platform', 'Native Performance', 'App Store Ready'],
       color: 'neon-purple'
-    },
-    {
-      icon: Brain,
-      title: 'AI Integration',
-      description: 'Intelligent solutions powered by machine learning and AI to automate processes and enhance decision-making.',
-      features: ['Machine Learning', 'Data Analytics', 'Automation', 'Smart Insights'],
-      color: 'neon-cyan'
     }
+    
   ];
 
   return (
