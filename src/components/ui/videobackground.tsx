@@ -10,7 +10,7 @@ const VideoBackground = ({ children }) => {
         loop
         muted
         playsInline // Important for mobile autoplay
-        className="absolute w-full h-full object-cover opacity-10"
+        className="absolute w-full h-full object-cover opacity-30"
       >
         <source src="/videos/background-video2.mp4" type="video/mp4" />
         {/* You can add another source for WebM for better browser compatibility */}

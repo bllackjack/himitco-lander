@@ -1,9 +1,9 @@
-
+'use client'
 import React, { useState, useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Mail, Phone, MapPin, Send, CheckCircle, AlertCircle } from 'lucide-react';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -15,6 +15,7 @@ const Contact: React.FC = () => {
     project: '',
     message: ''
   });
+  
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
@@ -75,12 +76,13 @@ const Contact: React.FC = () => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus('idle');
-
+    console.log(import.meta.env.VITE_EMAILJS_SERVICE_ID);
     try {
+
       // EmailJS configuration - You'll need to set up your EmailJS account
-      const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID; // Replace with your EmailJS service ID
-      const templateId =process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID ; // Replace with your EmailJS template ID
-      const userId = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY; // Replace with your EmailJS user ID
+      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID; // Replace with your EmailJS service ID
+      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID; // Replace with your EmailJS template ID
+      const userId = import.meta.env.VITE_EMAILJS_PUBLIC_KEY; // Replace with your EmailJS user ID
 
       const templateParams = {
         from_name: formData.name,
@@ -94,8 +96,8 @@ const Contact: React.FC = () => {
       // For demo purposes, we'll simulate a successful submission
     //  await new Promise(resolve => setTimeout(resolve, 2000));
       
-      // In real implementation, uncomment this:
-      // await emailjs.send(serviceId, templateId, templateParams, userId);
+   
+       await emailjs.send(serviceId, templateId, templateParams, userId);
 
       setSubmitStatus('success');
       setFormData({
