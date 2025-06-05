@@ -29,7 +29,7 @@ const Layout: React.FC<LayoutProps> = ({
   }, [title, description]);
 
   return (
-    <div className="min-h-screen  text-white">
+    <div className="min-h-screen  text-white ">
       <Header />
       <main>
         {children}

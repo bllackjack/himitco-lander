@@ -78,9 +78,9 @@ const Contact: React.FC = () => {
 
     try {
       // EmailJS configuration - You'll need to set up your EmailJS account
-      const serviceId = 'your_service_id'; // Replace with your EmailJS service ID
-      const templateId = 'your_template_id'; // Replace with your EmailJS template ID
-      const userId = 'your_user_id'; // Replace with your EmailJS user ID
+      const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID; // Replace with your EmailJS service ID
+      const templateId =process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID ; // Replace with your EmailJS template ID
+      const userId = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY; // Replace with your EmailJS user ID
 
       const templateParams = {
         from_name: formData.name,
@@ -88,11 +88,11 @@ const Contact: React.FC = () => {
         company: formData.company,
         project_type: formData.project,
         message: formData.message,
-        to_email: 'hello@himitco.com' // Replace with your email
+        to_email: 'himitco.online@gmail.com' // Replace with your email
       };
 
       // For demo purposes, we'll simulate a successful submission
-      await new Promise(resolve => setTimeout(resolve, 2000));
+    //  await new Promise(resolve => setTimeout(resolve, 2000));
       
       // In real implementation, uncomment this:
       // await emailjs.send(serviceId, templateId, templateParams, userId);

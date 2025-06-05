@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import gsap from 'gsap';
 import { ArrowDown, Sparkles } from 'lucide-react';
+import VideoBackground from './ui/videobackground';
 
 const Hero: React.FC = () => {
   useEffect(() => {
@@ -47,8 +48,10 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+ <VideoBackground>
+    <section id="hero" className="relative min-h-screen  flex items-center justify-center overflow-hidden">
       {/* Background Elements */}
+      
       <div className="absolute inset-0 opacity-20">
         <div className="floating-element absolute top-20 left-10 w-32 h-32 bg-gradient-to-r from-neon-cyan to-transparent rounded-full blur-xl"></div>
         <div className="floating-element absolute top-40 right-20 w-48 h-48 bg-gradient-to-r from-neon-purple to-transparent rounded-full blur-xl"></div>
@@ -67,31 +70,31 @@ const Hero: React.FC = () => {
       <div className="container mx-auto px-4 py-32 text-center relative z-10">
         <div className="max-w-5xl mx-auto">
           
-          <h1 className="hero-title text-5xl md:text-7xl lg:text-9xl font-bold font-space font-montserrat  mb-6 leading-tight">
-            <span className="block">HIMITCO</span>
+          <h1 className="hero-title text-5xl md:text-7xl lg:text-8xl font-bold mt-20 font-space font-montserrat  mb-4 leading-tight">
+            <span className="block ">HIMITCO</span>
          
           </h1>
           {/* Badge */}
-          <div className="hero-subtitle inline-flex items-center gap-2 bg-dark-card border border-neon-cyan/30 px-4 py-2 rounded-full mb-8">
+          <div className="hero-subtitle inline-flex items-center gap-2 bg-dark-card border border-neon-cyan/30 px-4 py-2 rounded-full mb-4">
             <Sparkles className="w-4 h-4 text-neon-cyan" />
             <span className="text-sm font-medium text-neon-cyan">Next-Gen Technology Solutions</span>
           </div>
 
           {/* Main Heading */}
          
-          <h1 className="hero-title text-5xl md:text-3xl lg:text-5xl font-bold font-space mb-6 leading-tight">
+          <h1 className="hero-title text-5xl md:text-3xl lg:text-5xl font-bold font-space mb-4 leading-tight">
             <span className="block">BUILDING YOUR</span>
             <span className="block text-gradient glow-effect">DIGITAL FUTURE</span>
           </h1>
 
           {/* Subtitle */}
-          <p className="hero-description text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
+          <p className="hero-description text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
             We specialize in cutting-edge web development, mobile applications, 
             and AI-powered platforms that transform businesses and elevate user experiences.
           </p>
 
           {/* CTA Buttons */}
-          <div className="hero-cta flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+          <div className="hero-cta flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
             <button 
               onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
               className="bg-gradient-to-r from-neon-cyan to-neon-purple px-8 py-4 rounded-lg font-semibold text-dark-bg hover:scale-105 transition-transform duration-300 glow-effect"
@@ -119,7 +122,10 @@ const Hero: React.FC = () => {
           </div>
         </div>
       </div>
+      
     </section>
+    </VideoBackground>
+    
   );
 };
 

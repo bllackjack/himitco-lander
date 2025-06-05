@@ -7,6 +7,8 @@ import Services from '../components/Services';
 import Portfolio from '../components/Portfolio';
 import Testimonials from '../components/Testimonials';
 import Contact from '../components/Contact';
+
+
 const Index: React.FC = () => {
   return (
     <Layout
