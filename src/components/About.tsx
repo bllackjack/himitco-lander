@@ -54,7 +54,7 @@ const About: React.FC = () => {
           {/* Header */}
           <div className="about-content text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold font-space mb-6">
-              About <span className="text-gradient">HIMITCO</span>
+              About <span className="text-gradient">HIMINFOTECH</span>
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-neon-cyan to-neon-purple mx-auto mb-8"></div>
           </div>
@@ -67,7 +67,7 @@ const About: React.FC = () => {
                 Pioneering Digital Innovation
               </h3>
               <p className="text-lg text-gray-300 leading-relaxed">
-                At HIMITCO, we're not just building websites and apps – we're crafting 
+                At HIMINFOTECH, we're not just building websites and apps – we're crafting 
                 digital experiences that define the future. Our team of passionate developers, 
                 designers, and AI specialists work at the intersection of creativity and technology.
               </p>

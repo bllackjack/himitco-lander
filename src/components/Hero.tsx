@@ -71,7 +71,7 @@ const Hero: React.FC = () => {
         <div className="max-w-5xl mx-auto">
           
           <h1 className="hero-title text-5xl md:text-7xl lg:text-8xl font-bold mt-20 font-space font-montserrat  mb-4 leading-tight">
-            <span className="block ">HIMITCO</span>
+            <span className="block ">HIMINFOTECH</span>
          
           </h1>
           {/* Badge */}
@@ -105,7 +105,7 @@ const Hero: React.FC = () => {
               onClick={() => document.querySelector('#portfolio')?.scrollIntoView({ behavior: 'smooth' })}
               className="border border-neon-cyan px-8 py-4 rounded-lg font-semibold text-neon-cyan hover:bg-neon-cyan hover:text-dark-bg transition-all duration-300"
             >
-              View Our Work
+              View Our Skills
             </button>
           </div>
 

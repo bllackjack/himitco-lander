@@ -88,7 +88,7 @@ const Portfolio: React.FC = () => {
           {/* Header */}
           <div className="portfolio-header text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-bold font-space mb-6">
-              Our <span className="text-gradient">Portfolio</span>
+              Our <span className="text-gradient">Skills</span>
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-neon-cyan to-neon-purple mx-auto mb-8"></div>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">

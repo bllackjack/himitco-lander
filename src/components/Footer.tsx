@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <h3 className="text-2xl font-bold font-space text-gradient">
-              HIMITCO
+            HIMINFOTECH
             </h3>
             <p className="text-gray-300 text-sm leading-relaxed">
               Building your digital future with cutting-edge web development, 
@@ -85,7 +85,7 @@ const Footer: React.FC = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-neon-cyan" />
-                <span className="text-gray-300 text-sm">himitco.online@gmail.com</span>
+                <span className="text-gray-300 text-sm">info@himinfotech.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-neon-cyan" />
@@ -103,7 +103,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-dark-border mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © {currentYear} HIMITCO. All rights reserved.
+              © {currentYear} HIMINFOTECH. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-neon-cyan transition-colors duration-300 text-sm">
