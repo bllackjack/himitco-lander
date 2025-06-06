@@ -121,7 +121,7 @@ const Contact: React.FC = () => {
     {
       icon: Mail,
       title: 'Email',
-      content: 'himitco.online@gmail.com',
+      content: 'info@himinfotech.com',
       description: 'Send us an email anytime!'
     },
     {

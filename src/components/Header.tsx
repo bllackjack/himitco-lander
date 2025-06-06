@@ -54,7 +54,7 @@ const Header: React.FC = () => {
           {/* Logo */}
           <div className="header-logo">
             <h1 className="text-2xl font-bold font-space text-gradient">
-              HIMITCO
+            HIMINFOTECH
             </h1>
           </div>
 
