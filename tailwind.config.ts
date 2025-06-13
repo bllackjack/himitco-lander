@@ -75,10 +75,9 @@ export default {
 				sm: 'calc(var(--radius) - 4px)'
 			},
 			fontFamily: {
-				sans: ['Inter', 'sans-serif'],
-				inter: ['Inter', 'sans-serif'],
-				grotesk: ['Space Grotesk', 'sans-serif'],
-				montserrat: ['Montserrat', 'sans-serif'],
+				sans: ['var(--font-inter)', 'Inter', 'sans-serif'],
+				inter: ['var(--font-inter)', 'Inter', 'sans-serif'],
+				montserrat: ['var(--font-montserrat)', 'Montserrat', 'sans-serif'],
 			},
 			keyframes: {
 				'accordion-down': {
@@ -107,10 +106,10 @@ export default {
 				},
 				'glow': {
 					'0%, 100%': {
-						boxShadow: '0 0 5px #00FFFF'
+						textShadow: '0 0 5px #00FFFF, 0 0 10px #00FFFF, 0 0 15px #00FFFF, 0 0 20px #8B5CF6, 0 0 35px #8B5CF6, 0 0 40px #8B5CF6'
 					},
 					'50%': {
-						boxShadow: '0 0 20px #00FFFF, 0 0 30px #00FFFF'
+						textShadow: '0 0 10px #00FFFF, 0 0 20px #00FFFF, 0 0 30px #00FFFF, 0 0 40px #8B5CF6, 0 0 50px #8B5CF6, 0 0 60px #8B5CF6'
 					}
 				}
 			},
