@@ -115,4 +115,37 @@
   .font-space {
     font-family: var(--font-inter), 'Inter', sans-serif;
   }
+
+  /* Custom scrollbar styling */
+  .custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #00FFFF #171717;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #171717;
+    border-radius: 4px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #00FFFF;
+    border-radius: 4px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #00CCCC;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
 }

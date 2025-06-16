@@ -2,7 +2,7 @@
 
 import LangChat from '@/components/LangChat';
 
-export default function MainHero() {
+export default function ChatBox() {
   return (
     <div className="h-screen text-white bg-gradient-to-b from-dark-bg to-dark-card overflow-hidden">
       <div className="w-full h-full rounded-xl shadow-lg p-2 sm:p-4">
