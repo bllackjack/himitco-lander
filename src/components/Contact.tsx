@@ -76,13 +76,17 @@ const Contact: React.FC = () => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus('idle');
-    console.log(import.meta.env.VITE_EMAILJS_SERVICE_ID);
+  
     try {
 
       // EmailJS configuration - You'll need to set up your EmailJS account
-      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID; // Replace with your EmailJS service ID
-      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID; // Replace with your EmailJS template ID
-      const userId = import.meta.env.VITE_EMAILJS_PUBLIC_KEY; // Replace with your EmailJS user ID
+      const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID; // Replace with your EmailJS service ID
+      const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID; // Replace with your EmailJS template ID
+      const userId = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY; // Replace with your EmailJS user ID
+
+      if (!serviceId || !templateId || !userId) {
+        throw new Error('EmailJS configuration is missing');
+      }
 
       const templateParams = {
         from_name: formData.name,

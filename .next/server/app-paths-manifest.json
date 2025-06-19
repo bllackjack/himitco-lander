@@ -1,0 +1,4 @@
+{
+  "/api/voicechat/route": "app/api/voicechat/route.js",
+  "/page": "app/page.js"
+}

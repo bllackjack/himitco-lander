@@ -1,16 +1,22 @@
 // components/VideoBackground.js
-'use Client';
+'use client';
 
-const VideoBackground = ({ children }) => {
+import React from 'react';
+
+interface VideoBackgroundProps {
+  children: React.ReactNode;
+}
+
+const VideoBackground: React.FC<VideoBackgroundProps> = ({ children }) => {
   return (
-    <div className="relative h-screen w-full overflow-hidden">
+    <div className="relative h-screen w-full overflow-hidden bg-gradient-to-b from-dark-bg to-dark-card">
       {/* Video element */}
       <video
         autoPlay
         loop
         muted
         playsInline // Important for mobile autoplay
-        className="absolute w-full h-full object-cover opacity-30"
+        className="absolute w-full h-full object-cover opacity-35"
       >
         <source src="/videos/background-video2.mp4" type="video/mp4" />
         {/* You can add another source for WebM for better browser compatibility */}
