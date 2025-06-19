@@ -34,12 +34,12 @@ export const useChatbot = (): UseChatbotResult => {
     const [error, setError] = useState<string | null>(null);
     const [sessionId, setSessionId] = useState<string | null>(null);
 
-    // Generate a new session ID when the hook is first mounted or if needed
+ 
     useEffect(() => {
         if (!sessionId) {
             setSessionId(uuidv4()); // Use uuidv4 consistently
         }
-    }, [sessionId]); // Dependency array ensures it only runs once per mount
+    }, [sessionId]); 
 
     const sendMessage = useCallback(async (text: string) => {
         if (!text.trim() || isLoading) return;
@@ -62,11 +62,13 @@ export const useChatbot = (): UseChatbotResult => {
             const response = await axios.post(apiEndpoint, {
                     message: text,
                     flowId: LANGFLOW_CHAT_FLOW_ID,
-                    sessionId: sessionId, // Pass the session Id
+                    sessionId: sessionId, 
+                
             },{
                 headers:{
                     'Content-Type':'application/json',
-                }
+                },
+                timeout: 120000,
             });
                    
             if (response.status !== 200) {
